@@ -51,6 +51,8 @@ const GeneralContextProvider = ({children}) => {
       
   const inputs = {username, email, usertype, password};
 
+  console.log("Inputs :: ", inputs)
+
   const register = async () =>{
     try{
         await axios.post('http://localhost:6001/register', inputs)
